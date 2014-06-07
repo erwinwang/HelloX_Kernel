@@ -6,73 +6,73 @@
 --------------------Configuration: master - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP8040.tmp" with contents
+Creating temporary file "C:\Users\Jack\AppData\Local\Temp\RSPEB8C.tmp" with contents
 [
 /nologo /MT /W3 /GX /O1 /I ".\include" /I ".\arch\x86" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "MASTER_EXPORTS" /Fp"Release/master.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
-"G:\I386\V176\Kernel\drivers\x86\com.c"
-"G:\I386\V176\Kernel\drivers\x86\IDEBASE.C"
-"G:\I386\V176\Kernel\drivers\x86\IDEHD.C"
-"G:\I386\V176\Kernel\drivers\x86\KEYBRD.C"
-"G:\I386\V176\Kernel\drivers\x86\MOUSE.C"
-"G:\I386\V176\Kernel\lib\stdio.c"
-"G:\I386\V176\Kernel\lib\string.c"
-"G:\I386\V176\Kernel\kthread\idle.c"
-"G:\I386\V176\Kernel\arch\x86\ARCH_X86.C"
-"G:\I386\V176\Kernel\arch\x86\BIOS.C"
-"G:\I386\V176\Kernel\arch\x86\HELLOCN.C"
-"G:\I386\V176\Kernel\fs\FAT32.C"
-"G:\I386\V176\Kernel\fs\FAT322.C"
-"G:\I386\V176\Kernel\fs\FATMGR.C"
-"G:\I386\V176\Kernel\fs\FATMGR2.C"
-"G:\I386\V176\Kernel\fs\FATSTR.C"
-"G:\I386\V176\Kernel\fs\fsstr.c"
-"G:\I386\V176\Kernel\fs\NTFS.C"
-"G:\I386\V176\Kernel\fs\NTFS2.C"
-"G:\I386\V176\Kernel\fs\NTFSDRV.C"
-"G:\I386\V176\Kernel\shell\EXTCMD.C"
-"G:\I386\V176\Kernel\shell\FDISK.C"
-"G:\I386\V176\Kernel\shell\FDISK2.C"
-"G:\I386\V176\Kernel\shell\FIBONACCI.C"
-"G:\I386\V176\Kernel\shell\FS.C"
-"G:\I386\V176\Kernel\shell\HEDIT.C"
-"G:\I386\V176\Kernel\shell\HYPERTRM.C"
-"G:\I386\V176\Kernel\shell\IOCTRL_S.C"
-"G:\I386\V176\Kernel\shell\SHELL.C"
-"G:\I386\V176\Kernel\shell\SHELL1.C"
-"G:\I386\V176\Kernel\shell\STAT_S.C"
-"G:\I386\V176\Kernel\shell\SYSD_S.C"
-"G:\I386\V176\Kernel\osentry\DRVENTRY.C"
-"G:\I386\V176\Kernel\osentry\mem_scat.c"
-"G:\I386\V176\Kernel\osentry\OS_ENTRY.C"
-"G:\I386\V176\Kernel\kernel\COMQUEUE.C"
-"G:\I386\V176\Kernel\kernel\console.c"
-"G:\I386\V176\Kernel\kernel\DEVMGR.C"
-"G:\I386\V176\Kernel\kernel\DIM.C"
-"G:\I386\V176\Kernel\kernel\HEAP.C"
-"G:\I386\V176\Kernel\kernel\IOMGR.C"
-"G:\I386\V176\Kernel\kernel\IOMGR2.C"
-"G:\I386\V176\Kernel\kernel\KAPI.C"
-"G:\I386\V176\Kernel\kernel\KERMOD.C"
-"G:\I386\V176\Kernel\kernel\KMEMMGR.C"
-"G:\I386\V176\Kernel\kernel\KTMGR.C"
-"G:\I386\V176\Kernel\kernel\KTMGR2.C"
-"G:\I386\V176\Kernel\kernel\MEM_FBL.C"
-"G:\I386\V176\Kernel\kernel\MEMMGR.C"
-"G:\I386\V176\Kernel\kernel\MODMGR.C"
-"G:\I386\V176\Kernel\kernel\OBJMGR.C"
-"G:\I386\V176\Kernel\kernel\OBJQUEUE.C"
-"G:\I386\V176\Kernel\kernel\PAGEIDX.C"
-"G:\I386\V176\Kernel\kernel\PCI_DRV.C"
-"G:\I386\V176\Kernel\kernel\PERF.C"
-"G:\I386\V176\Kernel\kernel\STATCPU.C"
-"G:\I386\V176\Kernel\kernel\SYNOBJ.C"
-"G:\I386\V176\Kernel\kernel\SYSCALL.C"
-"G:\I386\V176\Kernel\kernel\SYSTEM.C"
-"G:\I386\V176\Kernel\kernel\TYPES.C"
-"G:\I386\V176\Kernel\kernel\VMM.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\com.c"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\IDEBASE.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\IDEHD.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\KEYBRD.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\MOUSE.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\lib\stdio.c"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\lib\string.c"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kthread\idle.c"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\arch\x86\ARCH_X86.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\arch\x86\BIOS.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\arch\x86\HELLOCN.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\fs\FAT32.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\fs\FAT322.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\fs\FATMGR.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\fs\FATMGR2.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\fs\FATSTR.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\fs\fsstr.c"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\fs\NTFS.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\fs\NTFS2.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\fs\NTFSDRV.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\EXTCMD.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\FDISK.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\FDISK2.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\FIBONACCI.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\FS.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\HEDIT.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\HYPERTRM.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\IOCTRL_S.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\SHELL.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\SHELL1.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\STAT_S.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\SYSD_S.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\osentry\DRVENTRY.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\osentry\mem_scat.c"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\osentry\OS_ENTRY.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\COMQUEUE.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\console.c"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\DEVMGR.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\DIM.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\HEAP.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\IOMGR.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\IOMGR2.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\KAPI.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\KERMOD.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\KMEMMGR.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\KTMGR.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\KTMGR2.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\MEM_FBL.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\MEMMGR.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\MODMGR.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\OBJMGR.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\OBJQUEUE.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\PAGEIDX.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\PCI_DRV.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\PERF.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\STATCPU.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\SYNOBJ.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\SYSCALL.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\SYSTEM.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\TYPES.C"
+"G:\Develop\HelloX\garryxin\HelloX_Kernel\kernel\VMM.C"
 ]
-Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP8040.tmp" 
-Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP8041.tmp" with contents
+Creating command line "cl.exe @C:\Users\Jack\AppData\Local\Temp\RSPEB8C.tmp" 
+Creating temporary file "C:\Users\Jack\AppData\Local\Temp\RSPEB8D.tmp" with contents
 [
 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /base:"0x110000" /entry:"__OS_Entry" /dll /incremental:no /pdb:"Release/master.pdb" /map:"Release/master.map" /machine:I386 /out:"Release/master.dll" /implib:"Release/master.lib" /ALIGN:16 
 .\Release\com.obj
@@ -137,27 +137,27 @@ kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32
 .\Release\TYPES.OBJ
 .\Release\VMM.OBJ
 ]
-Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP8041.tmp"
+Creating command line "link.exe @C:\Users\Jack\AppData\Local\Temp\RSPEB8D.tmp"
 <h3>Output Window</h3>
 Compiling...
 com.c
 IDEBASE.C
-G:\I386\V176\Kernel\drivers\x86\com.c(52) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\drivers\x86\com.c(54) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\drivers\x86\com.c(55) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\drivers\x86\com.c(56) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\drivers\x86\com.c(59) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\drivers\x86\com.c(63) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\drivers\x86\com.c(189) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\drivers\x86\com.c(194) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\drivers\x86\com.c(199) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\drivers\x86\com.c(103) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\drivers\x86\com.c(114) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\drivers\x86\com.c(142) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\drivers\x86\com.c(159) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\drivers\x86\com.c(173) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\drivers\x86\com.c(412) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\drivers\x86\com.c(326) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\com.c(52) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\com.c(54) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\com.c(55) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\com.c(56) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\com.c(59) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\com.c(63) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\com.c(189) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\com.c(194) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\com.c(199) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\com.c(103) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\com.c(114) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\com.c(142) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\com.c(159) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\com.c(173) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\com.c(412) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\drivers\x86\com.c(326) : warning C4761: integral size mismatch in argument; conversion supplied
 IDEHD.C
 KEYBRD.C
 MOUSE.C
@@ -184,19 +184,19 @@ FS.C
 HEDIT.C
 HYPERTRM.C
 IOCTRL_S.C
-G:\I386\V176\Kernel\shell\HYPERTRM.C(38) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\shell\HYPERTRM.C(40) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\shell\HYPERTRM.C(41) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\shell\HYPERTRM.C(42) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\shell\HYPERTRM.C(55) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\shell\HYPERTRM.C(76) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\shell\HYPERTRM.C(289) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\shell\HYPERTRM.C(291) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\shell\HYPERTRM.C(292) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\shell\HYPERTRM.C(294) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\shell\HYPERTRM.C(295) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\shell\HYPERTRM.C(391) : warning C4761: integral size mismatch in argument; conversion supplied
-G:\I386\V176\Kernel\shell\HYPERTRM.C(396) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\HYPERTRM.C(38) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\HYPERTRM.C(40) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\HYPERTRM.C(41) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\HYPERTRM.C(42) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\HYPERTRM.C(55) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\HYPERTRM.C(76) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\HYPERTRM.C(289) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\HYPERTRM.C(291) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\HYPERTRM.C(292) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\HYPERTRM.C(294) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\HYPERTRM.C(295) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\HYPERTRM.C(391) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\Develop\HelloX\garryxin\HelloX_Kernel\shell\HYPERTRM.C(396) : warning C4761: integral size mismatch in argument; conversion supplied
 SHELL.C
 SHELL1.C
 STAT_S.C
