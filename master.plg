@@ -1,0 +1,244 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: master - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP8040.tmp" with contents
+[
+/nologo /MT /W3 /GX /O1 /I ".\include" /I ".\arch\x86" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "MASTER_EXPORTS" /Fp"Release/master.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"G:\I386\V176\Kernel\drivers\x86\com.c"
+"G:\I386\V176\Kernel\drivers\x86\IDEBASE.C"
+"G:\I386\V176\Kernel\drivers\x86\IDEHD.C"
+"G:\I386\V176\Kernel\drivers\x86\KEYBRD.C"
+"G:\I386\V176\Kernel\drivers\x86\MOUSE.C"
+"G:\I386\V176\Kernel\lib\stdio.c"
+"G:\I386\V176\Kernel\lib\string.c"
+"G:\I386\V176\Kernel\kthread\idle.c"
+"G:\I386\V176\Kernel\arch\x86\ARCH_X86.C"
+"G:\I386\V176\Kernel\arch\x86\BIOS.C"
+"G:\I386\V176\Kernel\arch\x86\HELLOCN.C"
+"G:\I386\V176\Kernel\fs\FAT32.C"
+"G:\I386\V176\Kernel\fs\FAT322.C"
+"G:\I386\V176\Kernel\fs\FATMGR.C"
+"G:\I386\V176\Kernel\fs\FATMGR2.C"
+"G:\I386\V176\Kernel\fs\FATSTR.C"
+"G:\I386\V176\Kernel\fs\fsstr.c"
+"G:\I386\V176\Kernel\fs\NTFS.C"
+"G:\I386\V176\Kernel\fs\NTFS2.C"
+"G:\I386\V176\Kernel\fs\NTFSDRV.C"
+"G:\I386\V176\Kernel\shell\EXTCMD.C"
+"G:\I386\V176\Kernel\shell\FDISK.C"
+"G:\I386\V176\Kernel\shell\FDISK2.C"
+"G:\I386\V176\Kernel\shell\FIBONACCI.C"
+"G:\I386\V176\Kernel\shell\FS.C"
+"G:\I386\V176\Kernel\shell\HEDIT.C"
+"G:\I386\V176\Kernel\shell\HYPERTRM.C"
+"G:\I386\V176\Kernel\shell\IOCTRL_S.C"
+"G:\I386\V176\Kernel\shell\SHELL.C"
+"G:\I386\V176\Kernel\shell\SHELL1.C"
+"G:\I386\V176\Kernel\shell\STAT_S.C"
+"G:\I386\V176\Kernel\shell\SYSD_S.C"
+"G:\I386\V176\Kernel\osentry\DRVENTRY.C"
+"G:\I386\V176\Kernel\osentry\mem_scat.c"
+"G:\I386\V176\Kernel\osentry\OS_ENTRY.C"
+"G:\I386\V176\Kernel\kernel\COMQUEUE.C"
+"G:\I386\V176\Kernel\kernel\console.c"
+"G:\I386\V176\Kernel\kernel\DEVMGR.C"
+"G:\I386\V176\Kernel\kernel\DIM.C"
+"G:\I386\V176\Kernel\kernel\HEAP.C"
+"G:\I386\V176\Kernel\kernel\IOMGR.C"
+"G:\I386\V176\Kernel\kernel\IOMGR2.C"
+"G:\I386\V176\Kernel\kernel\KAPI.C"
+"G:\I386\V176\Kernel\kernel\KERMOD.C"
+"G:\I386\V176\Kernel\kernel\KMEMMGR.C"
+"G:\I386\V176\Kernel\kernel\KTMGR.C"
+"G:\I386\V176\Kernel\kernel\KTMGR2.C"
+"G:\I386\V176\Kernel\kernel\MEM_FBL.C"
+"G:\I386\V176\Kernel\kernel\MEMMGR.C"
+"G:\I386\V176\Kernel\kernel\MODMGR.C"
+"G:\I386\V176\Kernel\kernel\OBJMGR.C"
+"G:\I386\V176\Kernel\kernel\OBJQUEUE.C"
+"G:\I386\V176\Kernel\kernel\PAGEIDX.C"
+"G:\I386\V176\Kernel\kernel\PCI_DRV.C"
+"G:\I386\V176\Kernel\kernel\PERF.C"
+"G:\I386\V176\Kernel\kernel\STATCPU.C"
+"G:\I386\V176\Kernel\kernel\SYNOBJ.C"
+"G:\I386\V176\Kernel\kernel\SYSCALL.C"
+"G:\I386\V176\Kernel\kernel\SYSTEM.C"
+"G:\I386\V176\Kernel\kernel\TYPES.C"
+"G:\I386\V176\Kernel\kernel\VMM.C"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP8040.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP8041.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /base:"0x110000" /entry:"__OS_Entry" /dll /incremental:no /pdb:"Release/master.pdb" /map:"Release/master.map" /machine:I386 /out:"Release/master.dll" /implib:"Release/master.lib" /ALIGN:16 
+.\Release\com.obj
+.\Release\IDEBASE.OBJ
+.\Release\IDEHD.OBJ
+.\Release\KEYBRD.OBJ
+.\Release\MOUSE.OBJ
+.\Release\stdio.obj
+.\Release\string.obj
+.\Release\idle.obj
+.\Release\ARCH_X86.OBJ
+.\Release\BIOS.OBJ
+.\Release\HELLOCN.OBJ
+.\Release\FAT32.OBJ
+.\Release\FAT322.OBJ
+.\Release\FATMGR.OBJ
+.\Release\FATMGR2.OBJ
+.\Release\FATSTR.OBJ
+.\Release\fsstr.obj
+.\Release\NTFS.OBJ
+.\Release\NTFS2.OBJ
+.\Release\NTFSDRV.OBJ
+.\Release\EXTCMD.OBJ
+.\Release\FDISK.OBJ
+.\Release\FDISK2.OBJ
+.\Release\FIBONACCI.OBJ
+.\Release\FS.OBJ
+.\Release\HEDIT.OBJ
+.\Release\HYPERTRM.OBJ
+.\Release\IOCTRL_S.OBJ
+.\Release\SHELL.OBJ
+.\Release\SHELL1.OBJ
+.\Release\STAT_S.OBJ
+.\Release\SYSD_S.OBJ
+.\Release\DRVENTRY.OBJ
+.\Release\mem_scat.obj
+.\Release\OS_ENTRY.OBJ
+.\Release\COMQUEUE.OBJ
+.\Release\console.obj
+.\Release\DEVMGR.OBJ
+.\Release\DIM.OBJ
+.\Release\HEAP.OBJ
+.\Release\IOMGR.OBJ
+.\Release\IOMGR2.OBJ
+.\Release\KAPI.OBJ
+.\Release\KERMOD.OBJ
+.\Release\KMEMMGR.OBJ
+.\Release\KTMGR.OBJ
+.\Release\KTMGR2.OBJ
+.\Release\MEM_FBL.OBJ
+.\Release\MEMMGR.OBJ
+.\Release\MODMGR.OBJ
+.\Release\OBJMGR.OBJ
+.\Release\OBJQUEUE.OBJ
+.\Release\PAGEIDX.OBJ
+.\Release\PCI_DRV.OBJ
+.\Release\PERF.OBJ
+.\Release\STATCPU.OBJ
+.\Release\SYNOBJ.OBJ
+.\Release\SYSCALL.OBJ
+.\Release\SYSTEM.OBJ
+.\Release\TYPES.OBJ
+.\Release\VMM.OBJ
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP8041.tmp"
+<h3>Output Window</h3>
+Compiling...
+com.c
+IDEBASE.C
+G:\I386\V176\Kernel\drivers\x86\com.c(52) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\drivers\x86\com.c(54) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\drivers\x86\com.c(55) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\drivers\x86\com.c(56) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\drivers\x86\com.c(59) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\drivers\x86\com.c(63) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\drivers\x86\com.c(189) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\drivers\x86\com.c(194) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\drivers\x86\com.c(199) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\drivers\x86\com.c(103) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\drivers\x86\com.c(114) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\drivers\x86\com.c(142) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\drivers\x86\com.c(159) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\drivers\x86\com.c(173) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\drivers\x86\com.c(412) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\drivers\x86\com.c(326) : warning C4761: integral size mismatch in argument; conversion supplied
+IDEHD.C
+KEYBRD.C
+MOUSE.C
+stdio.c
+string.c
+idle.c
+ARCH_X86.C
+BIOS.C
+HELLOCN.C
+FAT32.C
+FAT322.C
+FATMGR.C
+FATMGR2.C
+FATSTR.C
+fsstr.c
+NTFS.C
+NTFS2.C
+NTFSDRV.C
+EXTCMD.C
+FDISK.C
+FDISK2.C
+FIBONACCI.C
+FS.C
+HEDIT.C
+HYPERTRM.C
+IOCTRL_S.C
+G:\I386\V176\Kernel\shell\HYPERTRM.C(38) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\shell\HYPERTRM.C(40) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\shell\HYPERTRM.C(41) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\shell\HYPERTRM.C(42) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\shell\HYPERTRM.C(55) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\shell\HYPERTRM.C(76) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\shell\HYPERTRM.C(289) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\shell\HYPERTRM.C(291) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\shell\HYPERTRM.C(292) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\shell\HYPERTRM.C(294) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\shell\HYPERTRM.C(295) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\shell\HYPERTRM.C(391) : warning C4761: integral size mismatch in argument; conversion supplied
+G:\I386\V176\Kernel\shell\HYPERTRM.C(396) : warning C4761: integral size mismatch in argument; conversion supplied
+SHELL.C
+SHELL1.C
+STAT_S.C
+SYSD_S.C
+DRVENTRY.C
+mem_scat.c
+OS_ENTRY.C
+COMQUEUE.C
+console.c
+DEVMGR.C
+DIM.C
+HEAP.C
+IOMGR.C
+IOMGR2.C
+KAPI.C
+KERMOD.C
+KMEMMGR.C
+KTMGR.C
+KTMGR2.C
+MEM_FBL.C
+MEMMGR.C
+MODMGR.C
+OBJMGR.C
+OBJQUEUE.C
+PAGEIDX.C
+PCI_DRV.C
+PERF.C
+STATCPU.C
+SYNOBJ.C
+SYSCALL.C
+SYSTEM.C
+TYPES.C
+VMM.C
+Linking...
+LINK : warning LNK4108: /ALIGN specified without /DRIVER or /VXD; image may not run
+Release/master.dll : warning LNK4086: entrypoint "___OS_Entry" is not __stdcall with 12 bytes of arguments; image may not run
+LINK : warning LNK4096: /BASE value "110000" is invalid for Windows 95; image may not run
+
+
+
+<h3>Results</h3>
+master.dll - 0 error(s), 32 warning(s)
+</pre>
+</body>
+</html>
