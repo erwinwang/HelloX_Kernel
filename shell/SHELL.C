@@ -24,6 +24,9 @@
 #include "SYSD_S.H"
 #include "extcmd.h"
 
+//*******************
+#include "..\include\debug.h"
+
 #if defined(__I386__)
 #ifndef __BIOS_H__
 #include "..\arch\x86\BIOS.H"
@@ -33,6 +36,10 @@
 #include "..\INCLUDE\MODMGR.H"
 #include "..\include\console.h"
 #include "..\lib\stdio.h"
+
+//*******************
+#include "../include/debug.h"
+//*******************
 
 //Host name array of the system.
 #define MAX_HOSTNAME_LEN  16
@@ -76,7 +83,7 @@ __CMD_PARA_OBJ* FormParameterObj(LPSTR pszCmd)
 			pszCmd ++;
 			continue; 
 		}                                 //Filter the space.
-		
+
 		if(('-' == *pszCmd) || ('/' == *pszCmd))
 		{
 			pszCmd ++;
@@ -88,15 +95,15 @@ __CMD_PARA_OBJ* FormParameterObj(LPSTR pszCmd)
 		{
 			/*while((' ' != *pszCmd) && *pszCmd)  //To find the first parameter.
 			{
-				pszCmd ++;
+			pszCmd ++;
 			}
 			if(!*pszCmd)
-				break;
+			break;
 			while(' ' == *pszCmd)    //Filter the space.
-				pszCmd ++;
+			pszCmd ++;
 
 			if(!*pszCmd)
-				break;*/
+			break;*/
 			index = 0x0000;
 			while(('-' != *pszCmd) && ('/' != *pszCmd) && *pszCmd)
 			{
@@ -114,7 +121,7 @@ __CMD_PARA_OBJ* FormParameterObj(LPSTR pszCmd)
 					break;
 				while(' ' != *pszCmd)
 					pszCmd ++;          //Skip the no space characters if the parameter's length
-				                        //is longer than the const CMD_PARAMETER_LEN.
+				//is longer than the const CMD_PARAMETER_LEN.
 				while(' ' == *pszCmd)
 					pszCmd ++;          //Skip the space character.
 			}
@@ -151,7 +158,7 @@ extern VOID SysInfoHandler(LPSTR);      //Handles the sysinfo command.
 extern VOID HlpHandler(LPSTR);
 extern VOID LoadappHandler(LPSTR);
 extern VOID GUIHandler(LPSTR);          //Handler for GUI command,resides in
-                                        //shell2.cpp file.
+//shell2.cpp file.
 
 static VOID CpuHandler(LPSTR);
 static VOID SptHandler(LPSTR);
@@ -163,6 +170,7 @@ static VOID SysDiagApp(LPSTR);
 static VOID Reboot(LPSTR);
 static VOID Poweroff(LPSTR);
 static VOID ComDebug(LPSTR);
+static VOID DebugHandler(LPSTR);
 
 //Internal command handler array.
 __CMD_OBJ  CmdObj[] = {
@@ -184,6 +192,7 @@ __CMD_OBJ  CmdObj[] = {
 	{"cls"      ,    ClsHandler},
 	//You can add your specific command and it's handler here.
 	//{'yourcmd',    CmdHandler},
+	{"debug"    ,    DebugHandler},
 
 	//The last element of this array must be NULL.
 	{NULL       ,    NULL}
@@ -310,12 +319,12 @@ VOID IoCtrlApp(LPSTR pstr)
 
 	DeviceInputManager.SetFocusThread((__COMMON_OBJECT*)&DeviceInputManager,
 		(__COMMON_OBJECT*)lpIoCtrlThread);    //Set the current focus to IO control
-	                                          //application.
+	//application.
 
 	lpIoCtrlThread->WaitForThisObject((__COMMON_OBJECT*)lpIoCtrlThread);  //Block the shell
-	                                                                      //thread until
-	                                                                      //the IO control
-	                                                                      //application end.
+	//thread until
+	//the IO control
+	//application end.
 	KernelThreadManager.DestroyKernelThread((__COMMON_OBJECT*)&KernelThreadManager,
 		(__COMMON_OBJECT*)lpIoCtrlThread);  //Destroy the thread object.
 
@@ -443,6 +452,26 @@ VOID  DefaultHandler(LPSTR pstr)
 	return;
 }
 
+//*********************************
+// For log service
+//Author :	Erwin
+//Email  :	erwin.wang@qq.com
+//Date	 :  9th June, 2014
+//********************************
+VOID DebugHandler(LPSTR pstr)
+{
+	char buf[256] = {'0'};
+	while(TRUE)
+	{
+		Sleep(1000);
+		DebugManager.Logcat(&DebugManager, buf, 0);
+		if(buf[0] != '0')
+		{
+			PrintLine(buf);
+		}
+	}
+}
+
 //Command analyzing routine,it analyzes user's input and search
 //command array to find a proper handler,then call it.
 //Default handler will be called if no proper command handler is
@@ -451,7 +480,7 @@ static VOID  DoCommand()
 {
 	DWORD wIndex = 0x0000;
 	BOOL bResult = FALSE;        //If find the correct command object,then
-	                             //This flag set to TRUE.
+	//This flag set to TRUE.
 	CHAR tmpBuffer[36];
 	DWORD dwIndex = 0;           //Used for 'for' loop.
 	__KERNEL_THREAD_OBJECT* hKernelThread = NULL;
@@ -534,7 +563,7 @@ static VOID  PrintPrompt()
 	}
 	else
 	{
-	    PrintLine(pszSysName);
+		PrintLine(pszSysName);
 	}
 	return;
 }

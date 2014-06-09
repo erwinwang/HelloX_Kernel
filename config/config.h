@@ -194,3 +194,12 @@
 //************************************************************************
 
 //More compiling switches can be appended here.
+
+//*********************************
+// For log service
+//Author :	Erwin
+//Email  :	erwin.wang@qq.com
+//Date	 :  9th June, 2014
+//********************************
+// Logcat service for debug subsystem
+#define __CFG_SYS_LOGCAT
