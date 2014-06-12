@@ -90,10 +90,10 @@ void __OS_Entry()
 
 	//*****************ERWIN********
 	//FOR DEBUG LOG TEST
-	__KERNEL_THREAD_OBJECT *lpTA = NULL;
-	__KERNEL_THREAD_OBJECT *lpTB = NULL;
-	__KERNEL_THREAD_OBJECT *lpTC = NULL;
-	__KERNEL_THREAD_OBJECT *lpTD = NULL;
+	//__KERNEL_THREAD_OBJECT *lpTA = NULL;
+	//__KERNEL_THREAD_OBJECT *lpTB = NULL;
+	//__KERNEL_THREAD_OBJECT *lpTC = NULL;
+	//__KERNEL_THREAD_OBJECT *lpTD = NULL;
 	__KERNEL_THREAD_OBJECT *lpLogcatDaemonThread = NULL;
 
 	//Prepare the OS initialization environment.It's worth noting that even the System
@@ -404,62 +404,62 @@ void __OS_Entry()
 	//**************************
 	DebugManager.Initialize(&DebugManager);
 
-	lpTD = KernelThreadManager.CreateKernelThread(   //Create shell thread.
-		(__COMMON_OBJECT*)&KernelThreadManager,
-		0,
-		KERNEL_THREAD_STATUS_READY,
-		PRIORITY_LEVEL_HIGH_4,
-		TDEntry,
-		NULL,
-		NULL,
-		"Kernel ThreadD");
-	if(NULL == lpTD)
-	{
-		goto __TERMINAL;
-	}
+	//lpTD = KernelThreadManager.CreateKernelThread(   //Create shell thread.
+	//	(__COMMON_OBJECT*)&KernelThreadManager,
+	//	0,
+	//	KERNEL_THREAD_STATUS_READY,
+	//	PRIORITY_LEVEL_HIGH_4,
+	//	TDEntry,
+	//	NULL,
+	//	NULL,
+	//	"Kernel ThreadD");
+	//if(NULL == lpTD)
+	//{
+	//	goto __TERMINAL;
+	//}
 
-	lpTC = KernelThreadManager.CreateKernelThread(   //Create shell thread.
-		(__COMMON_OBJECT*)&KernelThreadManager,
-		0,
-		KERNEL_THREAD_STATUS_READY,
-		PRIORITY_LEVEL_HIGH_3,
-		TCEntry,
-		NULL,
-		NULL,
-		"Kernel ThreadC");
-	if(NULL == lpTC)
-	{
-		goto __TERMINAL;
-	}
+	//lpTC = KernelThreadManager.CreateKernelThread(   //Create shell thread.
+	//	(__COMMON_OBJECT*)&KernelThreadManager,
+	//	0,
+	//	KERNEL_THREAD_STATUS_READY,
+	//	PRIORITY_LEVEL_HIGH_3,
+	//	TCEntry,
+	//	NULL,
+	//	NULL,
+	//	"Kernel ThreadC");
+	//if(NULL == lpTC)
+	//{
+	//	goto __TERMINAL;
+	//}
 
 
-	lpTB = KernelThreadManager.CreateKernelThread(   //Create shell thread.
-		(__COMMON_OBJECT*)&KernelThreadManager,
-		0,
-		KERNEL_THREAD_STATUS_READY,
-		PRIORITY_LEVEL_HIGH_2,
-		TBEntry,
-		NULL,
-		NULL,
-		"ThreadB");
-	if(NULL == lpTB)
-	{
-		goto __TERMINAL;
-	}
+	//lpTB = KernelThreadManager.CreateKernelThread(   //Create shell thread.
+	//	(__COMMON_OBJECT*)&KernelThreadManager,
+	//	0,
+	//	KERNEL_THREAD_STATUS_READY,
+	//	PRIORITY_LEVEL_HIGH_2,
+	//	TBEntry,
+	//	NULL,
+	//	NULL,
+	//	"ThreadB");
+	//if(NULL == lpTB)
+	//{
+	//	goto __TERMINAL;
+	//}
 
-	lpTA = KernelThreadManager.CreateKernelThread(   //Create shell thread.
-		(__COMMON_OBJECT*)&KernelThreadManager,
-		0,
-		KERNEL_THREAD_STATUS_READY,
-		PRIORITY_LEVEL_HIGH,
-		TAEntry,
-		NULL,
-		NULL,
-		"ThreadA");
-	if(NULL == lpTA)
-	{
-		goto __TERMINAL;
-	}
+	//lpTA = KernelThreadManager.CreateKernelThread(   //Create shell thread.
+	//	(__COMMON_OBJECT*)&KernelThreadManager,
+	//	0,
+	//	KERNEL_THREAD_STATUS_READY,
+	//	PRIORITY_LEVEL_HIGH,
+	//	TAEntry,
+	//	NULL,
+	//	NULL,
+	//	"ThreadA");
+	//if(NULL == lpTA)
+	//{
+	//	goto __TERMINAL;
+	//}
 	lpLogcatDaemonThread = KernelThreadManager.CreateKernelThread(   //Create logcat daemon thread.
 		(__COMMON_OBJECT*)&KernelThreadManager,
 		0,

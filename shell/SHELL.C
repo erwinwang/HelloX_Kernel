@@ -461,14 +461,17 @@ VOID  DefaultHandler(LPSTR pstr)
 VOID DebugHandler(LPSTR pstr)
 {
 	char buf[256] = {'0'};
+	int count = 0;
 	while(TRUE)
 	{
+		count++;
 		Sleep(1000);
 		DebugManager.Logcat(&DebugManager, buf, 0);
 		if(buf[0] != '0')
 		{
 			PrintLine(buf);
 		}
+		if(count == 10)break;
 	}
 }
 

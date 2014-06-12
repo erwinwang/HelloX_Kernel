@@ -33,68 +33,68 @@
 #endif
 
 
-DWORD TAEntry(LPVOID pData)
-{
-	int i = 0;
-	int Result = -1;
-
-	while (TRUE)
-	{
-		i++;
-		//DebugManager.Log(&DebugManager, "TA", "Thread A is logging...");
-		Logk("TA", "TA is logging...");
-		KernelThreadManager.Sleep((__COMMON_OBJECT*)&KernelThreadManager,200);
-	}
-
-}
-
-DWORD TBEntry(LPVOID pData)
-{
-	int i = 0;
-
-	int Result = -1;
-
-	while (TRUE)
-	{
-		//DebugManager.Log(&DebugManager, "TB", "Thread B is logging...");
-		Logk("TB", "Thread B is logging...");
-		KernelThreadManager.Sleep((__COMMON_OBJECT*)&KernelThreadManager,500);
-	}
-}
-
-DWORD TDEntry(LPVOID pData)
-{
-	int i = 0;
-	int j = 0;
-
-	int Result = -1;
-
-	while (TRUE)
-	{
-		i++;
-		//DebugManager.Log(&DebugManager, "KTD", "Kernel Thread D is logging...");
-		Logk("TD", "Thread D is logging...");
-		KernelThreadManager.Sleep((__COMMON_OBJECT*)&KernelThreadManager,200);
-	}
-
-}
-
-DWORD TCEntry(LPVOID pData)
-{
-	int i = 0;
-	int j = 0;
-
-	int Result = -1;
-
-	while (TRUE)
-	{
-		i++;
-		//DebugManager.Log(&DebugManager, "KTC", "Kernel Thread C is logging...");
-		Logk("TC", "Thread C is logging...");
-		KernelThreadManager.Sleep((__COMMON_OBJECT*)&KernelThreadManager,500);
-	}
-
-}
+//DWORD TAEntry(LPVOID pData)
+//{
+//	int i = 0;
+//	int Result = -1;
+//
+//	while (TRUE)
+//	{
+//		i++;
+//		//DebugManager.Log(&DebugManager, "TA", "Thread A is logging...");
+//		Logk("TA", "TA is logging...");
+//		KernelThreadManager.Sleep((__COMMON_OBJECT*)&KernelThreadManager,200);
+//	}
+//
+//}
+//
+//DWORD TBEntry(LPVOID pData)
+//{
+//	int i = 0;
+//
+//	int Result = -1;
+//
+//	while (TRUE)
+//	{
+//		//DebugManager.Log(&DebugManager, "TB", "Thread B is logging...");
+//		Logk("TB", "Thread B is logging...");
+//		KernelThreadManager.Sleep((__COMMON_OBJECT*)&KernelThreadManager,500);
+//	}
+//}
+//
+//DWORD TDEntry(LPVOID pData)
+//{
+//	int i = 0;
+//	int j = 0;
+//
+//	int Result = -1;
+//
+//	while (TRUE)
+//	{
+//		i++;
+//		//DebugManager.Log(&DebugManager, "KTD", "Kernel Thread D is logging...");
+//		Logk("TD", "Thread D is logging...");
+//		KernelThreadManager.Sleep((__COMMON_OBJECT*)&KernelThreadManager,200);
+//	}
+//
+//}
+//
+//DWORD TCEntry(LPVOID pData)
+//{
+//	int i = 0;
+//	int j = 0;
+//
+//	int Result = -1;
+//
+//	while (TRUE)
+//	{
+//		i++;
+//		//DebugManager.Log(&DebugManager, "KTC", "Kernel Thread C is logging...");
+//		Logk("TC", "Thread C is logging...");
+//		KernelThreadManager.Sleep((__COMMON_OBJECT*)&KernelThreadManager,500);
+//	}
+//
+//}
 
 DWORD LogcatDaemon(LPVOID pData)
 {
@@ -109,7 +109,7 @@ DWORD LogcatDaemon(LPVOID pData)
 				Console.PrintLine(buf);
 			}
 		}
-		KernelThreadManager.Sleep(&KernelThreadManager, 500);
+		KernelThreadManager.Sleep((__COMMON_OBJECT *)&KernelThreadManager, 500);
 	}
 
 }

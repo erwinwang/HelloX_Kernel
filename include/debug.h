@@ -27,10 +27,12 @@ typedef struct LOG_MESSAGE{
 	int tid;
 
 	int format;
-
-	char *name;
-	char *tag;
-	char *msg;
+#define TREAD_NAME_MAX_LENGTH 32
+#define TAG_MAX_LENGTH 32
+#define MSG_MAX_LENGTH 32
+	char name[TREAD_NAME_MAX_LENGTH];
+	char tag[TAG_MAX_LENGTH];
+	char msg[MSG_MAX_LENGTH];
 }__LOG_MESSAGE;
 
 //typedef struct LOGK_MESSAGE{
