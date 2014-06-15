@@ -331,11 +331,11 @@ static void Unintialize(__DEBUG_MANAGER *pThis)
 __DEBUG_MANAGER DebugManager =
 {
 	// For user 
-	(void *)0,
+	NULL,
 	NULL,       //MODIFIED BY GARRY: Please keep same structure in header file's definition,only warning in C will be generated if
-	//align is not enforced and can lead fatal run time error.
+				//align is not enforced and can lead fatal run time error.
 	// For kernel
-	(void *)0,
+	NULL,
 	NULL,
 
 	Log,		//Log
