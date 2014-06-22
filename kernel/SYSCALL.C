@@ -378,6 +378,15 @@ BOOL SyscallHandler(LPVOID lpEsp,LPVOID lpParam)
 			(__COMMON_OBJECT*)&DeviceInputManager,
 			(__COMMON_OBJECT*)PARAM(0));
 		break;
+		//Add PeekMessage. Erwin 2014.6.21
+	case SYSCALL_PEEKMESSAGE:
+		pspb->lpRetValue = (LPVOID)KernelThreadManager.PeekMessage(
+			NULL, (__KERNEL_THREAD_MESSAGE*)PARAM(0));
+		break;
+	case SYSCALL_GETTICKCOUNT:
+		pspb->lpRetValue = (LPVOID)System.GetClockTickCounter(
+			(__COMMON_OBJECT *)&System);
+		break;
 	default:
 		if(!DispatchToModule(lpEsp,NULL))
 		{

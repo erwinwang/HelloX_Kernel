@@ -117,6 +117,10 @@ BOOL RegisterSystemCall(DWORD dwStartNum,DWORD dwEndNum,
 #define SYSCALL_SWITCHTOTEXT          0x35     //SwitchToText.
 #define SYSCALL_SETFOCUSTHREAD        0x36     //SetFocusThread.
 
+//Erwin 2014.6.21
+#define SYSCALL_PEEKMESSAGE			  0x37		//PeekMessage
+#define SYSCALL_GETTICKCOUNT		  0x38		//GetTickCount
+
 //Every system call should be handled by this routine.
 BOOL SyscallHandler(LPVOID lpEsp,LPVOID);
 
