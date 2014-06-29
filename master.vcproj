@@ -74,11 +74,15 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalOptions="/ALIGN:16"
+				IgnoreImportLibrary="true"
+				LinkLibraryDependencies="false"
+				AdditionalOptions="/ALIGN:32"
 				OutputFile=".\Release/master.dll"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
 				GenerateManifest="false"
+				IgnoreAllDefaultLibraries="false"
+				IgnoreDefaultLibraryNames=""
 				ProgramDatabaseFile=".\Release/master.pdb"
 				GenerateMapFile="true"
 				MapFileName=".\Release/master.map"

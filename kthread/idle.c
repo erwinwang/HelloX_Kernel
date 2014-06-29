@@ -36,6 +36,9 @@ DWORD SystemIdle(LPVOID lpData)
 	while(TRUE)
 	{
 		dwIdleCounter ++;
+		__asm hlt;
+		__asm hlt;
+		__asm hlt;
 		if(0xFFFFFFFF == dwIdleCounter)
 		{
 			dwIdleCounter = 0;
